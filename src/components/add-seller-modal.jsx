@@ -101,20 +101,6 @@ class AddSellerModal extends Component {
     };
     console.log("sellerdatatsdsa: ", sellerData);
 
-    // if(this.state.seller.profilePicture) {
-    //   const formData = new FormData();
-    //   formData.append('file',this.state.seller.profilePictureObj)
-    //   const uploadImgRes = await uploadImageOnCloudinary(formData);
-    //   console.log(uploadImgRes)
-    //   if(uploadImgRes && uploadImgRes.url) {
-    //       this.state.sellerDetails.profilePicture = uploadImgRes.url;
-    //   } else {
-    //       ToastsStore.error('Somthing went wrong, Try again!', 3000);
-    //       this._closeModal();
-    //       return;
-    //   }
-    // }
-
     if (this.props.type === "add" && !this.props.data) {
       createSeller(sellerData).then(
         (response) => {

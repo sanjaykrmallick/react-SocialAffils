@@ -11,9 +11,6 @@ import {
   ToastsContainerPosition,
 } from "react-toasts";
 import PublicRoute from "./components/public-route";
-import { persistor, store } from "./redux/store";
-import { PersistGate } from 'redux-persist/integration/react';
-import { Provider } from 'react-redux';
 
 // import ForgotPassword from "./pages/ForgotPassword/forgot-password";
 
@@ -44,8 +41,6 @@ class App extends Component {
       //       </Switch>
       //     </React.Suspense>
       // </HashRouter>
-      <Provider store={store}>
-        <PersistGate persistor={persistor}>
           <BrowserRouter>
             <ToastsContainer
               store={ToastsStore}
@@ -73,8 +68,6 @@ class App extends Component {
               </div>
             </div>
           </BrowserRouter>
-        </PersistGate>
-      </Provider>
     );
   }
 }

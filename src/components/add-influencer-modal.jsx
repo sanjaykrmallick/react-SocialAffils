@@ -105,19 +105,7 @@ class AddInfluencerModal extends Component {
         ")" +
         this.state.influencer.phone,
     };
-    // if (this.state.influencer.profilePicture) {
-    //   const formData = new FormData();
-    //   formData.append("file", this.state.influencer.profilePictureObj);
-    //   const uploadImgRes = await uploadImageOnCloudinary(formData);
-    //   console.log("uploadImgRes: ", uploadImgRes);
-    //   if (uploadImgRes && uploadImgRes.url) {
-    //     this.state.influencerDetails.profilePicture = uploadImgRes.url;
-    //   } else {
-    //     ToastsStore.error("Somthing went wrong, Try again!", 3000);
-    //     this._closeModal();
-    //     return;
-    //   }
-    // }
+    
     if (this.props.type === "add" && !this.props.data) {
       createInfluencer(Influencerdata).then(
         (response) => {
@@ -570,12 +558,12 @@ class AddInfluencerModal extends Component {
                   )}
                 </FormGroup>{" "}
               </Col>
-              {this.props.type !== "add" ? (
+              {/* {this.props.type !== "add" ? (
                 <>
                   {" "}
                   <FormGroup className='px-3'>
                     <Label htmlFor='product'>Product</Label>
-                    {/* <Input
+                    <Input
                       type="text"
                       id="product"
                       placeholder="Enter"
@@ -583,8 +571,8 @@ class AddInfluencerModal extends Component {
                       value={influencer.product}
                       onChange={this._handleOnChange}
                       disabled={loading}
-                    /> */}
-                    {/* <p>{influencer.product}</p> */}
+                    />
+                    <p>{influencer.product}</p>
                     <p>20</p>
                   </FormGroup>
                   <FormGroup className='px-3'>
@@ -610,7 +598,7 @@ class AddInfluencerModal extends Component {
                   </FormGroup>
                   <FormGroup className='px-3'>
                     <Label htmlFor='sales'>Sales</Label>
-                    {/* <Input
+                    <Input
                       type="Number"
                       id="sales"
                       placeholder="Enter"
@@ -618,11 +606,11 @@ class AddInfluencerModal extends Component {
                       value={influencer.sales}
                       onChange={this._handleOnChange}
                       disabled={loading}
-                    /> */}
+                    />
                     <p>{influencer.sales}</p>
                   </FormGroup>
                 </>
-              ) : null}
+              ) : null} */}
             </Row>
           </ModalBody>
           <ModalFooter>

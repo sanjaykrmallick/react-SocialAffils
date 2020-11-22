@@ -544,22 +544,20 @@ class Seller extends Component {
       loading,
       subscriptionCounts,
       salesCounts,
-      priceCounts,
-      contact,
       totalCount,
       tableConfig,
-      subscriberListBackup,
       sellerList,
+      sellerListBackup
     } = this.state;
     //  console.log("this.state",this.state)
-    const creator = subscriberListBackup
-      .map((i) => {
-        return { creator: i.creator, creatorId: i.creatorId };
-      })
-      .filter((item, pos, arr) => {
-        return arr.findIndex((i) => i.creatorId === item.creatorId) === pos;
-      });
-    console.log(creator);
+    // const creator = sellerListBackup
+    //   .map((i) => {
+    //     return { creator: i.creator, creatorId: i.creatorId };
+    //   })
+    //   .filter((item, pos, arr) => {
+    //     return arr.findIndex((i) => i.creatorId === item.creatorId) === pos;
+    //   });
+    // console.log(creator);
     return (
       <div className='app TruFansPgBg animated fadeIn'>
         <Container fluid>
