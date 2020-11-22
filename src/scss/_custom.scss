@@ -1,0 +1,99 @@
+// Here you can add other styles
+
+.table-bordered td{
+  border: 0;
+  border-top: 1px solid #c8ced3;
+}
+.table thead th{
+  border: 0;
+  border-bottom: 2px solid #1F1F1F;
+  // border-bottom-color: #1F1F1F;
+}
+
+.validation-error{
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #f86c6b;
+}
+
+.invalid-input{
+  .input-group-text{
+    border-color: #f87575;
+  }
+  input{
+    border-color: #f87575;
+    &:focus{
+      outline: none;
+      border-color: #f87575;
+      box-shadow: 0 0 0 0.2rem rgb(252, 203, 202);
+    }
+  }
+}
+
+.validation-error{
+  border-color: #f87575;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.loading-section{
+  // border:1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.DateInput_input{
+  padding: 4px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.ql-editor{
+  height: 150px;
+  background-color: #fff;
+}
+.quill .editor{
+
+}
+
+.DateRangePickerInput__withBorder {
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.DateInput_input {
+  padding: 3px 4px;
+    font-size: 14px;
+}
+
+.tiktok-social-icon{
+  height: 20px;
+  margin-top: -3px;
+}
+
+.react-bs-table-sizePerPage-dropdown{
+  button{
+    background-color: #fff !important;
+  }
+}
+
+.table-overlay{
+  position: absolute;
+    background: rgba(34, 34, 34,0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    div{
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+}
